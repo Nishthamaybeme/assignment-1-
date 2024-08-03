@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class FallingObject {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter the duration in seconds
+        System.out.print("Enter time in seconds: ");
+        int x = input.nextInt();
+
+        // Constants
+        double g = 9.81;
+
+        // Compute the distance fallen due to gravity
+        float s = (float) (0.5 * g * x * x);
+
+        // Display the computed distance
+        System.out.println("Distance = " + s + " meters");
+
+        // Close the input scanner
+        input.close();
+    }
+}
